@@ -11,7 +11,7 @@ tcnn:
 tcnn_internal:
 	# export PATH="/usr/local/cuda-11.7/bin:$PATH" && \
 	export LD_LIBRARY_PATH="/usr/local/cuda-11.7/lib64:$LD_LIBRARY_PATH" && \
-	cmake . -B build -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=on
+	cmake . -B build -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=on
 	cd build && make
 
 wheels:
