@@ -9,6 +9,9 @@ RUN apt-get install wget -y
 RUN apt-get install gnupg2 -y
 RUN apt-get install git -y
 RUN apt-get install software-properties-common -y
+RUN apt-get install python3 -y
+RUN apt-get install python3-pip -y
+RUN pip install torch
 
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/*
